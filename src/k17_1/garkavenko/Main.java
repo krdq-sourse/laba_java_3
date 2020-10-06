@@ -1,5 +1,7 @@
 package k17_1.garkavenko;
 
+import java.util.Scanner;
+
 public class Main {
     // Дана целочисленная прямоугольная матрица. Определить:
     //1)количество столбцов, не содержащих ни одного нулевого элемента.
@@ -13,7 +15,13 @@ public class Main {
         int[] sumOfPositiveNumbers =  instance.GetSumOfPositiveNumbers();
         Debug(sumOfPositiveNumbers);
         System.out.print("\nЗадание 2.1\n");
-        System.out.println( ReplaceMiddle("abajavaj",' '));
+        Scanner in = new Scanner(System.in);
+        System.out.print("Ведите текст: ");
+        String text = in.next();
+        System.out.print("Ведите символ: ");
+        char symbol = in.next().charAt(0);
+        System.out.println( ReplaceMiddle(text,symbol));
+        System.out.print("\nЗадание 2.2\n");
     }
     private static void Debug(int[] temp){
         for (int el: temp) {
