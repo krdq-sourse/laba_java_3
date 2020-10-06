@@ -60,11 +60,4 @@ public class Main {
         return false;
     }
 
-//    public static String ExUra(String _text, char symbol) {
-//        StringBuilder sb = new StringBuilder(_text);
-//        int index = sb.indexOf(String.valueOf('a'));
-//        sb.replace(index,index, String.valueOf(symbol));
-//        return sb.toString();
-//    }
-
 }
